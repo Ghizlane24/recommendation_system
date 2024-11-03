@@ -1,11 +1,7 @@
 <?php
+include 'db/database.php';
 
-try {
-    $db = new PDO('mysql:host=localhost;dbname=recommendation_system', 'root', '');
-} catch (PDOException $e) {
-    echo "Connection failed: " . $e->getMessage();
-    exit;
-}
+$db = getConnection();
 
 
 // Function to get user preferences

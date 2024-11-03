@@ -1,5 +1,5 @@
 <?php
-include 'operations.php';
+include 'functions/operations.php';
 
 $userId = 1; // Replace with dynamic user ID
 $userPreferences = getUserPreferences($userId, $db);
